@@ -10,7 +10,7 @@ const Navbar = () => (
             top: 0,
         }}
     >
-        <nav className="navbar navbar-expand-lg navbar-dark  bg-dark text-white shadow">
+        <nav className="navbar navbar-expand-lg navbar-dark  bg-dark text-white shadow ">
             <div className="container">
                 <Link className="navbar-brand" to="/">
                     QualityCanDo
