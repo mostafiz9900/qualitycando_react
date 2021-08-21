@@ -8,8 +8,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Footer from './pages/footer/Footer';
-import Home2 from './pages/home/Home2';
-import Home3 from './pages/home/Home3';
 import Services from './pages/services/Services';
 
 function App() {
@@ -18,15 +16,13 @@ function App() {
             <div>
                 <Navbar />  
                 <Switch>
-                    <Route  path="/" component={Home} />                       
+                    <Route exact path="/" component={Home} />                       
                            
-                    <Route exact path="/about" component={About} />
+                    <Route  path="/about" component={About} />                  
                     <Route  path="/services" >
                         <Services/>
                     </Route>
-                    <Route exact path="/contact" component={Contact} />
-                    <Route exact path="/home2" component={Home2} />
-                    <Route exact path="/home3" component={Home3} />
+                    <Route exact path="/contact" component={Contact} />                   
                     <Route component={Error} />
                 </Switch>
                 <Footer />
