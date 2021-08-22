@@ -8,9 +8,10 @@ const Navbar = () => (
             background: '#0392FD',
             position: 'sticky',
             top: 0,
+            zIndex: '5000000',
         }}
     >
-        <nav className="navbar navbar-expand-lg navbar-dark  bg-dark text-white shadow ">
+        <nav className="navbar navbar-expand-lg navbar-dark  bg-dark text-white shadow naveBrHeader">
             <div className="container">
                 <Link className="navbar-brand" to="/">
                     QualityCanDo
@@ -31,7 +32,7 @@ const Navbar = () => (
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <NavLink
-                                className="nav-link"
+                                className="nav-link nabText"
                                 activeClassName="nav-link--active"
                                 aria-current="page"
                                 activeStyle={{ fontWeight: 'bold' }}

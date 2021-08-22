@@ -2,3 +2,13 @@
   background-color: #ececec !important;
   color: #060404;
 } */
+.naveBrHeader{
+  z-index: 1000;
+  position: relative;
+}
+.nav-link, .nabText{
+  font-size: 25px;
+  position: sticky;
+  margin-right: 30px;
+
+}
