@@ -14,26 +14,43 @@ import Footer from './pages/footer/Footer';
 import Services from './pages/services/Services';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-
+import RightSideBar from './components/sidebar/RightSideBar';
+import './pages/books/Book.css';
+import Home2 from './pages/home/Home2';
+import Home3 from './pages/home/Home3';
 
 
 function App() {
     return (
         <Router>
             <div>
-                <Navbar />                
-                <Switch>
-                    <Route exact path="/" component={Home} />                    
-                           
-                    <Route  path="/about" component={About} />                  
-                    <Route  path="/services" >
-                     <Services/>
-                    </Route>
-                    <Route exact path="/contact" component={Contact} />                   
-                    <Route component={Error} />
-                </Switch>   
-                <Footer />
+                <Navbar /> 
+                <div className="container">
+                <div className="row ">
+                <div className="col-md-9 mainBody">
+                    <Switch>
+                        <Route exact path="/" component={Home} />                    
+                            
+                        <Route  path="/about" component={About} />                  
+                        <Route  path="/services" >
+                        <Services/>
+                        </Route>
+                        <Route exact path="/contact" component={Contact} />                   
+                        <Route exact path="/home2" component={Home2} />                   
+                        <Route exact path="/home3" component={Home3} />                   
+                        <Route component={Error} />
+                    </Switch>   
+                </div>
+                <div className="col-md-3 aboutBody">
+                <RightSideBar/>
+                </div>
+                </div>            
+                
+               
             </div>
+            <Footer />
+                </div>   
+               
         </Router>
     );
 }
